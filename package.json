@@ -1,7 +1,7 @@
 {
-  "name": "holiday-gift-list",
+  "name": "merkle-tree-gift-list",
   "scripts": {
-    "dev": "nodemon --exec 'node ./server/index.js && npx webpack --config webpack.config.js'"
+    "dev": "nodemon --watch server --watch client --exec \"npx webpack --config webpack.config.js && node ./server/index.js\""
   },
   "dependencies": {
     "axios": "^1.2.0",

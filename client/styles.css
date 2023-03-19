@@ -1,12 +1,19 @@
+:root {
+    --main-color: rgb(255, 20, 200);
+    --dark-color: rgb(0, 27, 49);
+    --light-color: rgb(255, 255, 189);
+    --radius: 0.25rem;
+}
+
 * {
     font-family: monospace;
-    color: aquamarine;
+    color: var(--main-color);
     box-sizing: border-box;
 }
 
 body,
 html {
-    background-color: black;
+    background-color: var(--dark-color);
 }
 
 body {
@@ -19,12 +26,62 @@ body {
     padding: 5rem;
 }
 
-button {
-    background-color: aquamarine;
-    color: black;
+label {
+    color: var(--light-color);
+    font-size: 2rem;
+}
+
+input {
+    width: 100vw;
+    max-width: 400px;
+    outline: none;
+    border: none;
     padding: 1rem;
+    border-radius: var(--radius);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+input::placeholder {
+    color: var(--dark-color);
+}
+
+button {
+    width: 10rem;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 1rem;
+    outline: none;
+    border: 2px solid var(--main-color);
+    border-radius: var(--radius);
+    font-weight: 700;
+    transition: all 0.5s ease;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--dark-color);
+    color: var(--main-color);
 }
 
 h1 {
     text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#name {
+    font-size: 1.25rem;
+    padding: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: var(--radius);
+    color: var(--light-color);
+}
+
+.hidden {
+    display: none;
 }

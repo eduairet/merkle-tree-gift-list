@@ -5,14 +5,17 @@ import MerkleTree from '../utils/MerkleTree';
 const serverUrl = document.location.origin;
 
 async function main() {
-    // TODO: how do we prove to the server we're on the nice list?
-
+    // Check the name provided by the user
+    const inputName = document.getElementById('name-input').value;
+    // Send the request for the name
     const { data: gift } = await axios.post(`${serverUrl}/gift`, {
-        // TODO: add request body parameters here!
+        body: { name: inputName }, // Name from the input
     });
-
+    // Display the result from the request in the frontend
     console.log({ gift });
-    document.getElementById('name').textContent = gift;
+    const name = document.getElementById('name');
+    name.classList.remove('hidden');
+    name.textContent = gift;
 }
 
 document.getElementById('check').addEventListener('click', main);
