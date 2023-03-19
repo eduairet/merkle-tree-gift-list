@@ -2,7 +2,7 @@ import axios from 'axios';
 import niceList from '../utils/niceList.json';
 import MerkleTree from '../utils/MerkleTree';
 
-const serverUrl = process.env.APP_URL;
+const serverUrl = document.location.origin;
 
 async function main() {
     // TODO: how do we prove to the server we're on the nice list?
