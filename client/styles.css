@@ -1,7 +1,7 @@
 :root {
     --main-color: rgb(255, 20, 200);
     --dark-color: rgb(0, 27, 49);
-    --light-color: rgb(255, 255, 189);
+    --light-color: rgb(189, 254, 255);
     --radius: 0.25rem;
 }
 
@@ -80,6 +80,10 @@ h1 {
     border: 2px solid var(--main-color);
     border-radius: var(--radius);
     color: var(--light-color);
+}
+
+#gift {
+    font-size: 3rem;
 }
 
 .hidden {
