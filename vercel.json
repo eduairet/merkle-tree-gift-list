@@ -11,8 +11,5 @@
             "src": "/(.*)",
             "dest": "/server/index.js"
         }
-    ],
-    "env": {
-        "APP_URL": "https://merkle-tree-gift-list.vercel.app"
-    }
+    ]
 }

@@ -1,0 +1,30 @@
+* {
+    font-family: monospace;
+    color: aquamarine;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+}
+
+button {
+    background-color: aquamarine;
+    color: black;
+    padding: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+}
